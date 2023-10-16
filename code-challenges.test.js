@@ -13,39 +13,94 @@
 
 // a) Create a test with expect statements for each of the variables provided.
 
-const numbersArray1 = [6, 7, 8, 9, 10]
-// Expected output: [18, 21, 24, 27, 30]
-const numbersArray2 = [24, 27, 30, 33, 36]
-// Expected output: [72, 81, 90, 99, 108]
+describe('multipliedByThree', () => {
+    it('takes in an array of numbers and returns an array with all the numbers multiplied by 3', () => {
+      const numbersArray1 = [6, 7, 8, 9, 10]
+      // Expected output: [18, 21, 24, 27, 30]
+      const numbersArray2 = [24, 27, 30, 33, 36]
+      // Expected output: [72, 81, 90, 99, 108]
+      expect(multipliedByThree(numbersArray1)).toEqual([18, 21, 24, 27, 30])
+      expect(multipliedByThree(numbersArray2)).toEqual([72, 81, 90, 99, 108])
+    })
+  })
+
+// ReferenceError: multipliedByThree is not defined
 
 // b) Create the function that makes the test pass.
 
 // Pseudo code:
+
+// input: array of numbers
+// output: array with all the numbers multiplied by three
+const multipliedByThree = (arr) => {
+    // iterate through the array using .map HOF
+    return arr.map(num => {
+      // each iteration multiplies the current value by 3
+      // the product is returned in the new array made by .map
+      return num * 3
+    })
+  }
 
 // --------------------1) Create a function that takes a object as an argument and decides if the number inside it is evenly divisible by three or not.
 
 // a) Create a test with expect statements for each of the variables provided.
 
-const object1 = { number: 15 }
-// Expected output: "15 is divisible by three"
-const object2 = { number: 0 }
-// Expected output: "0 is divisible by three"
-const object3 = { number: -7 }
-// Expected output: "-7 is not divisible by three"
+describe('divisibleByThree', () => {
+  it('that takes a object as an argument and decides if the number inside it is evenly divisible by three or not.', () => {
+    const object1 = { number: 15 }
+    // Expected output: "15 is divisible by three"
+    const object2 = { number: 0 }
+    // Expected output: "0 is divisible by three"
+    const object3 = { number: -7 }
+    // Expected output: "-7 is not divisible by three"
+    expect(divisibleByThree(object1)).toEqual("15 is divisible by three")
+    expect(divisibleByThree(object2)).toEqual("0 is divisible by three")
+    expect(divisibleByThree(object3)).toEqual("-7 is not divisible by three")
+  })
+})
+//ReferenceError: divisibleByThree is not defined- good failure
 
 // b) Create the function that makes the test pass.
 
 // Pseudo code:
+
+//input: objects
+//output: divisible by three or not
+const divisibleByThree = (obj) => {
+//use dataype number
+  const number = obj.number
+//use modulo to check number
+    if (number % 3 === 0) {
+        return `${number} is divisible by three`
+    } else {
+        return `${number} is not divisible by three`
+    }
+}
+
 
 // --------------------2) Create a function that takes in an array of words and returns an array with all the words capitalized.
 
 // a) Create a test with expect statements for each of the variables provided.
 
-const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
-// Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
-const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
-// Expected output: ["Temperature", "Database", "Chopsticks", "Mango"]
 
+describe('capFirstLetter', () => {
+  it('takes in an array of words and returns an array with all the words capitalized', () => {
+    const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
+    // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
+    const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
+    // Expected output: ["Temperature", "Database", "Chopsticks", "Mango"]
+    expect(capFirstLetter()).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
+    expect(capFirstLetter()).toEqual(["Temperature", "Database", "Chopsticks", "Mango"])
+  })
+})  
+
+//ReferenceError: capFirstLetter is not defined - good failure 
 // b) Create the function that makes the test pass.
 
 // Pseudo code:
+
+// cosnt capFirstLetter = () => {
+//   return 
+// }
+
+//didnt get to finish 
