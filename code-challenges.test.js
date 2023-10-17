@@ -67,7 +67,7 @@ describe('divisibleByThree', () => {
 //input: objects
 //output: divisible by three or not
 const divisibleByThree = (obj) => {
-//use dataype number
+//use dot notation to to access the value of the key in the object
   const number = obj.number
 //use modulo to check number
     if (number % 3 === 0) {
@@ -84,13 +84,13 @@ const divisibleByThree = (obj) => {
 
 
 describe('capFirstLetter', () => {
-  it('takes in an array of words and returns an array with all the words capitalized', () => {
+  it('takes in an array of words and returns an array with all the words capitalized.', () => {
     const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
     // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
     const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
     // Expected output: ["Temperature", "Database", "Chopsticks", "Mango"]
-    expect(capFirstLetter()).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
-    expect(capFirstLetter()).toEqual(["Temperature", "Database", "Chopsticks", "Mango"])
+    expect(capFirstLetter(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
+    expect(capFirstLetter(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango"])
   })
 })  
 
@@ -98,9 +98,25 @@ describe('capFirstLetter', () => {
 // b) Create the function that makes the test pass.
 
 // Pseudo code:
+// created a function capFirstLetter that takes an array
+const capFirstLetter = (arr) => {
+//use map action to return array output
+  return arr.map((value) => {
+//use [0] to access first index and capitalize and concatenate the remainder
+    return value[0].toUpperCase() + value.substring(1)
+  })
+}
 
-// cosnt capFirstLetter = () => {
-//   return 
-// }
+// multipliedByThree
+// ✓ takes in an array of numbers and returns an array with all the numbers multiplied by 3 (3 ms)
+// divisibleByThree
+// ✓ that takes a object as an argument and decides if the number inside it is evenly divisible by three or not.
+// capFirstLetter
+// ✓ takes in an array of words and returns an array with all the words capitalized. (1 ms)
 
-//didnt get to finish 
+// Test Suites: 1 passed, 1 total
+// Tests:       3 passed, 3 total
+// Snapshots:   0 total
+// Time:        0.361 s, estimated 1 s
+// Ran all test suites.
+// ✨  Done in 0.97s.

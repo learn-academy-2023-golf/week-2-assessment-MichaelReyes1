@@ -45,7 +45,7 @@ const myCodingSkills = {
 // console.log(myCodingSkills.languages[0])
 
 // a) Your answer: JavaScript
-// b) Verify and explain: i got that answer by looking at the console.log and seeing they invoked the function myCodingSkills and added .languages to get that list and [0] was used to access the first item in the list.
+// b) Verify and explain: i got that answer by looking at the console.log and seeing they invoked the object myCodingSkills and added .languages to get that list and [0] was used to access the first item in the list.
 
 // --------------------5) What will this log?
 
