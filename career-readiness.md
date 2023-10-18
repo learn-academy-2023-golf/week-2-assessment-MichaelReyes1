@@ -8,17 +8,17 @@ This week, we covered the importance of a great technical portfolio to help you 
 
 - Spend time looking at other developer’s portfolios. Submit the links to three portfolios you will use for inspiration.
 
-1.
-2.
-3.
+1. https://p5aholic.me/
+2. https://itssharl.ee/fr
+3. https://bepatrickdavid.com/
 
 ### LinkedIn
 
-Your LinkedIn url:
+Your LinkedIn url: www.linkedin.com/in/michaelreyes5
 
 Check the boxes below to certify that you have completed the following items on your LinkedIn profile:
 
-- [ ] add additional previous jobs (up to 10 years as appropriate) in the Experience section. Add skills and descriptions to your jobs that highlight transferable skills.
-- [ ] create a new post about your first two weeks at LEARN. Topics can include (but are not limited to) JavaScript, git and GitHub, pair programming, or communication skills.
-- [ ] add at least ten more professional connections. Connections can include your cohort mates, LEARN alumni, LEARN staff, following companies of interest, friends and family, and former coworkers.
-- [ ] react (like, celebrate, comment, etc) to ten posts from your existing connections.
+- [ :white_check_mark:] add additional previous jobs (up to 10 years as appropriate) in the Experience section. Add skills and descriptions to your jobs that highlight transferable skills.
+- [:white_check_mark: ] create a new post about your first two weeks at LEARN. Topics can include (but are not limited to) JavaScript, git and GitHub, pair programming, or communication skills.
+- [ :white_check_mark:] add at least ten more professional connections. Connections can include your cohort mates, LEARN alumni, LEARN staff, following companies of interest, friends and family, and former coworkers.
+- [ :white_check_mark:] react (like, celebrate, comment, etc) to ten posts from your existing connections.
